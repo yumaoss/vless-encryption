@@ -531,7 +531,6 @@ write_config() {
 
     echo "$encryption_config" > ~/xray_encryption_info.txt
 
-    # 已移除 streamSettings，因为 "network": "tcp" 是默认行为，可省略
     jq -n \
         --argjson port "$port" \
         --arg uuid "$uuid" \
@@ -546,6 +545,10 @@ write_config() {
             "settings": {
                 "clients": [{"id": $uuid, "flow": $flow}],
                 "decryption": $decryption
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "none"
             }
         }],
         "outbounds": [{
