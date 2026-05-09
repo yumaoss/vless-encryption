@@ -3,7 +3,7 @@
 
 ## 一键安装
 ```
-bash <(curl -L https://raw.githubusercontent.com/yahuisme/vless-encryption/main/install.sh)
+bash <(curl -L https://github.com/yumaoss/vless-encryption/raw/refs/heads/main/install.sh)
 ```
 
 ## 无交互安装
