@@ -539,7 +539,7 @@ write_config() {
     '{
         "log": {"loglevel": "warning"},
         "inbounds": [{
-            "listen": "::",
+            "listen": "0.0.0.0",
             "port": $port,
             "protocol": "vless",
             "settings": {
