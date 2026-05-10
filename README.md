@@ -5,7 +5,10 @@
 ```
 bash <(curl -L https://github.com/yumaoss/vless-encryption/raw/refs/heads/main/install.sh)
 ```
-
+## 一键安装 random
+```
+https://raw.githubusercontent.com/yumaoss/vless-encryption/refs/heads/main/installrandom.sh
+```
 ## 无交互安装
 ```
 bash <(curl -L https://raw.githubusercontent.com/yahuisme/vless-encryption/main/install.sh) install --port 12345 --uuid 'd0f6a483-51b3-44eb-94b6-1f5fc9272c81'
