@@ -7,7 +7,7 @@ bash <(curl -L https://github.com/yumaoss/vless-encryption/raw/refs/heads/main/i
 ```
 ## 一键安装 random
 ```
-https://raw.githubusercontent.com/yumaoss/vless-encryption/refs/heads/main/installrandom.sh
+bash <(curl -L https://raw.githubusercontent.com/yumaoss/vless-encryption/refs/heads/main/installrandom.sh)
 ```
 ## 无交互安装
 ```
