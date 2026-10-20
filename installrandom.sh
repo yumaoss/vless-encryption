@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # VLESS Encryption 一键安装管理脚本
-# 版本: V1.5.8 (VLESS Encryption 外观调整)
+# 版本: V1.6.0
+# 更新日志 (V1.6.0):
+# - [配置] 将 install-geodata改为官方脚本中update-geodata
 # 更新日志 (V1.5.8):
 # - [配置] 将 VLESS Encryption 外观从 native 调整为 random
 # 更新日志 (V1.5.7):
@@ -346,7 +348,7 @@ update_xray() {
     fi
 
     info "正在更新 GeoIP 和 GeoSite 数据文件..."
-    execute_official_script "install-geodata"
+    execute_official_script "update-geodata"
 
     if ! restart_xray; then return; fi
     success "Xray 更新成功！"
@@ -579,7 +581,7 @@ run_install() {
     fi
 
     info "正在安装/更新 GeoIP 和 GeoSite 数据文件..."
-    execute_official_script "install-geodata"
+    execute_official_script "update-geodata"
 
     if ! check_xray_version; then
         error "安装的 Xray 版本不支持 VLESS Encryption！请检查安装的版本。"
